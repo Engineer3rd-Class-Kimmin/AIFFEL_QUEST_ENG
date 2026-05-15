@@ -1,4 +1,3 @@
-</> Markdown
 
 # AIFFEL_QUEST_ENG
 
