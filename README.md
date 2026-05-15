@@ -10,7 +10,7 @@
 
 ## 레포 구조
 
-'''text
+```text
 
 AIFFEL_QUEST_ENG
 ├── 01_Python
@@ -101,4 +101,4 @@ AIFFEL_QUEST_ENG
 │   └── MQ05
 │       └── README.md
 └── README.md
-'''
+```
