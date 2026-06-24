@@ -17,24 +17,25 @@
     - `mask_f` 를 0~1 사이 실수로 바꿔서 `원본 * mask_f + 블러 * (1 - mask_f)` 로 합성하는 게 한 번에 이해가 안 됐는데, 줄마다 한글 주석이 달려 있어서 "아 고양이 자리는 원본, 나머지는 블러구나" 하고 따라갈 수 있었습니다.  
     - 특히 BGR↔RGB 변환을 왜 자꾸 하는지 주석으로 짚어주신 게 좋았어요. OpenCV로 저장할 때 다시 BGR로 돌리는 것까지 적어두셔서 헷갈리지 않았습니다.  
     - 마스크가 실제로 어떻게 잡혔는지도 중간에 출력해두셔서 이해에 도움이 됐습니다.  
-    <img src="images/02_mask.png" width="300">  
-    ```python
+    <img src="images/02_mask.png" width="300">   
+    
+    ```python  
     # 마스크 경계선 GaussianBlur로 그라데이션
-    mask = cv2.GaussianBlur(mask, (21, 21), 0)
-    # mask_f 는 고양이만 딱 가져와서 합성 재료로 만듦
-    mask_f = mask.astype(np.float32) / 255.0
-    mask_f = np.dstack([mask_f] * 3)
-    # 배경 전체를 흐리게
-    blurred = cv2.GaussianBlur(img_rgb, (51, 51), 0)
-    # mask_f 고양이 + 블러 배경
-    out = (img_rgb * mask_f + blurred * (1.0 - mask_f)).astype(np.uint8)
-    ```
+    mask = cv2.GaussianBlur(mask, (21, 21), 0)  
+    # mask_f 는 고양이만 딱 가져와서 합성 재료로 만듦  
+    mask_f = mask.astype(np.float32) / 255.0   
+    mask_f = np.dstack([mask_f] * 3)    
+    # 배경 전체를 흐리게  
+    blurred = cv2.GaussianBlur(img_rgb, (51, 51), 0)  
+    # mask_f 고양이 + 블러 배경  
+    out = (img_rgb * mask_f + blurred * (1.0 - mask_f)).astype(np.uint8)  
+    ```  
 
 - [x]  **3. 에러가 난 부분을 디버깅하여 문제를 해결한 기록을 남겼거나 새로운 시도 또는 추가 실험을 수행해봤나요?**
-    - 이 부분이 제일 인상적이었어요. 첫 합성에서 누끼가 거칠게 따여서 다리 주변이 깔끔하지 않은 걸 직접 캡처해서 "발이 짤렸다"고 솔직하게 기록하셨더라고요.  
-    <img src="images/01_foot_cut.png" width="400">  
-    - 거기서 멈추지 않고 "밝아서 세그가 잘 안 된 것 같다 -> 더 진한 사진으로 교체" 하는 식으로 원인을 추측하고 사진을 바꿔 재시도하신 흐름이 좋았습니다.  
-    - 그래도 안 되니까 아예 DeepLabV3에서 YOLO11-seg 모델로 갈아타신 것, 그리고 rembg + opencv 후처리 같은 방법을 추가로 조사해 적어두신 것도 추가 실험으로 잘 남기셨네요.  
+    - 이 부분이 제일 인상적이었어요. 첫 합성에서 누끼가 거칠게 따여서 다리 주변이 깔끔하지 않은 걸 직접 캡처해서 "발이 짤렸다"고 솔직하게 기록하셨더라고요.    
+    <img src="images/01_foot_cut.png" width="400">   
+    - 거기서 멈추지 않고 "밝아서 세그가 잘 안 된 것 같다 -> 더 진한 사진으로 교체" 하는 식으로 원인을 추측하고 사진을 바꿔 재시도하신 흐름이 좋았습니다.   
+    - 그래도 안 되니까 아예 DeepLabV3에서 YOLO11-seg 모델로 갈아타신 것, 그리고 rembg + opencv 후처리 같은 방법을 추가로 조사해 적어두신 것도 추가 실험으로 잘 남기셨네요.    
 
 - [x]  **4. 회고를 잘 작성했나요?**
     - 맨 끝에 "세그멘테이션이 까다롭다, 누끼가 원하는 대로 안 따지고 발이 잘리고 배경이 섞여 들어온다, 더 정밀한 방법을 공부해야겠다" 하고 배운 점과 아쉬운 점을 솔직하게 적어주셨어요.  
