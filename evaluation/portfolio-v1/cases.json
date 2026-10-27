@@ -1,0 +1,398 @@
+[
+  {
+    "id": "PY-01",
+    "kind": "palindrome",
+    "input": "racecar",
+    "expected": true,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-02",
+    "kind": "palindrome",
+    "input": "python",
+    "expected": false,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-03",
+    "kind": "palindrome",
+    "input": "",
+    "expected": true,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-04",
+    "kind": "palindrome",
+    "input": "a",
+    "expected": true,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-05",
+    "kind": "palindrome",
+    "input": "abba",
+    "expected": true,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-06",
+    "kind": "palindrome",
+    "input": "Abba",
+    "expected": false,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-07",
+    "kind": "palindrome",
+    "input": "기러기",
+    "expected": true,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-08",
+    "kind": "palindrome",
+    "input": "토마토",
+    "expected": true,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-09",
+    "kind": "palindrome",
+    "input": "ab a",
+    "expected": false,
+    "purpose": "원문 그대로의 대칭 여부; 대소문자와 공백을 자동 정규화하지 않음"
+  },
+  {
+    "id": "PY-10",
+    "kind": "classifier",
+    "input": [
+      "aba",
+      "abc",
+      "a"
+    ],
+    "expected": {
+      "count": 2,
+      "ratio": 0.6666666666666666
+    },
+    "purpose": "빈 목록은 회문 0개와 비율 0을 반환해야 한다는 신규 견고성 기준 포함"
+  },
+  {
+    "id": "PY-11",
+    "kind": "classifier",
+    "input": [
+      "abc",
+      "xyz"
+    ],
+    "expected": {
+      "count": 0,
+      "ratio": 0
+    },
+    "purpose": "빈 목록은 회문 0개와 비율 0을 반환해야 한다는 신규 견고성 기준 포함"
+  },
+  {
+    "id": "PY-12",
+    "kind": "classifier",
+    "input": [
+      "aa",
+      "bb"
+    ],
+    "expected": {
+      "count": 2,
+      "ratio": 1
+    },
+    "purpose": "빈 목록은 회문 0개와 비율 0을 반환해야 한다는 신규 견고성 기준 포함"
+  },
+  {
+    "id": "PY-13",
+    "kind": "classifier",
+    "input": [],
+    "expected": {
+      "count": 0,
+      "ratio": 0
+    },
+    "purpose": "빈 목록은 회문 0개와 비율 0을 반환해야 한다는 신규 견고성 기준 포함"
+  },
+  {
+    "id": "PY-14",
+    "kind": "minmax",
+    "input": [
+      3,
+      1,
+      9
+    ],
+    "expected": [
+      1,
+      9
+    ],
+    "purpose": "클로저 반환값; 빈 입력은 명시적으로 거부해야 한다는 신규 기준"
+  },
+  {
+    "id": "PY-15",
+    "kind": "minmax",
+    "input": [
+      -5,
+      -1,
+      -9
+    ],
+    "expected": [
+      -9,
+      -1
+    ],
+    "purpose": "클로저 반환값; 빈 입력은 명시적으로 거부해야 한다는 신규 기준"
+  },
+  {
+    "id": "PY-16",
+    "kind": "minmax",
+    "input": [
+      4
+    ],
+    "expected": [
+      4,
+      4
+    ],
+    "purpose": "클로저 반환값; 빈 입력은 명시적으로 거부해야 한다는 신규 기준"
+  },
+  {
+    "id": "PY-17",
+    "kind": "minmax",
+    "input": [
+      2,
+      2
+    ],
+    "expected": [
+      2,
+      2
+    ],
+    "purpose": "클로저 반환값; 빈 입력은 명시적으로 거부해야 한다는 신규 기준"
+  },
+  {
+    "id": "PY-18",
+    "kind": "minmax",
+    "input": [
+      1.5,
+      -2.5,
+      0
+    ],
+    "expected": [
+      -2.5,
+      1.5
+    ],
+    "purpose": "클로저 반환값; 빈 입력은 명시적으로 거부해야 한다는 신규 기준"
+  },
+  {
+    "id": "PY-19",
+    "kind": "minmax",
+    "input": [],
+    "expected": "ValueError",
+    "purpose": "클로저 반환값; 빈 입력은 명시적으로 거부해야 한다는 신규 기준"
+  },
+  {
+    "id": "PY-20",
+    "kind": "account",
+    "input": [
+      [
+        "deposit",
+        100
+      ]
+    ],
+    "expected": {
+      "balance": 1100,
+      "deposits": 1,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-21",
+    "kind": "account",
+    "input": [
+      [
+        "deposit",
+        0
+      ]
+    ],
+    "expected": {
+      "balance": 1000,
+      "deposits": 0,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-22",
+    "kind": "account",
+    "input": [
+      [
+        "deposit",
+        -10
+      ]
+    ],
+    "expected": {
+      "balance": 1000,
+      "deposits": 0,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-23",
+    "kind": "account",
+    "input": [
+      [
+        "withdraw",
+        100
+      ]
+    ],
+    "expected": {
+      "balance": 900,
+      "deposits": 0,
+      "withdrawals": 1
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-24",
+    "kind": "account",
+    "input": [
+      [
+        "withdraw",
+        1001
+      ]
+    ],
+    "expected": {
+      "balance": 1000,
+      "deposits": 0,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-25",
+    "kind": "account",
+    "input": [
+      [
+        "withdraw",
+        1000
+      ]
+    ],
+    "expected": {
+      "balance": 0,
+      "deposits": 0,
+      "withdrawals": 1
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-26",
+    "kind": "account",
+    "input": [
+      [
+        "withdraw",
+        -100
+      ]
+    ],
+    "expected": {
+      "balance": 1000,
+      "deposits": 0,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-27",
+    "kind": "account",
+    "input": [
+      [
+        "withdraw",
+        0
+      ]
+    ],
+    "expected": {
+      "balance": 1000,
+      "deposits": 0,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-28",
+    "kind": "account",
+    "input": [
+      [
+        "deposit",
+        100
+      ],
+      [
+        "deposit",
+        100
+      ],
+      [
+        "deposit",
+        100
+      ],
+      [
+        "deposit",
+        100
+      ],
+      [
+        "deposit",
+        100
+      ]
+    ],
+    "expected": {
+      "balance": 1515,
+      "deposits": 5,
+      "withdrawals": 0
+    },
+    "purpose": "잔액과 거래 이력 보존; 0 이하 출금은 기록과 잔액을 바꾸지 않아야 함"
+  },
+  {
+    "id": "PY-29",
+    "kind": "character",
+    "input": 3,
+    "expected": 100,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  },
+  {
+    "id": "PY-30",
+    "kind": "character",
+    "input": 5,
+    "expected": 100,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  },
+  {
+    "id": "PY-31",
+    "kind": "character",
+    "input": 6,
+    "expected": 99,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  },
+  {
+    "id": "PY-32",
+    "kind": "character",
+    "input": 50,
+    "expected": 55,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  },
+  {
+    "id": "PY-33",
+    "kind": "character",
+    "input": 105,
+    "expected": 0,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  },
+  {
+    "id": "PY-34",
+    "kind": "character",
+    "input": 200,
+    "expected": 0,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  },
+  {
+    "id": "PY-35",
+    "kind": "character",
+    "input": -10,
+    "expected": 100,
+    "purpose": "방어력 5, HP 100; 피해량과 HP 하한 확인"
+  }
+]
