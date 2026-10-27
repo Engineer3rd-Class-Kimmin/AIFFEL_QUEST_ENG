@@ -1,0 +1,170 @@
+[
+  {
+    "path": "01_Python/Py01/Quest0520.ipynb",
+    "code_cells": 5,
+    "stored_error_outputs": 0,
+    "execution_this_review": "selected definitions only",
+    "sha256": "93c0106d856be368acd007ddbab32e37992803e427a4a25e7f3162cf9ef5805b"
+  },
+  {
+    "path": "01_Python/Py02/QUEST0522.ipynb",
+    "code_cells": 5,
+    "stored_error_outputs": 0,
+    "execution_this_review": "selected definitions only",
+    "sha256": "cfc5f011d158496dafa688dc1a2799c8966c426da33c1285dc870d9e00defbb6"
+  },
+  {
+    "path": "01_Python/Py03/Quest4.ipynb",
+    "code_cells": 2,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "e0b9e18c4714bc554659198ec7797572f375fdab013a546e53c195590e2d94e0"
+  },
+  {
+    "path": "01_Python/Py04/QuestC0529.ipynb",
+    "code_cells": 5,
+    "stored_error_outputs": 0,
+    "execution_this_review": "selected definitions only",
+    "sha256": "97522fce331ab8ee9213dcd9ab0e69419dcc6512269e2fa689639e47d6961280"
+  },
+  {
+    "path": "01_Python/Py05/QuestC0528.ipynb",
+    "code_cells": 5,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "c20ab82f2c83d77f8f2d897decc84c46ed3f2a6316181508b063cce03b1f1e53"
+  },
+  {
+    "path": "02_Data_Analysis/DA01/QuestB0605.ipynb",
+    "code_cells": 22,
+    "stored_error_outputs": 2,
+    "execution_this_review": "not executed",
+    "sha256": "75a69b39e5df93a0733eb981b79b653faf4313591a025d1e7a8f817108d3e505"
+  },
+  {
+    "path": "02_Data_Analysis/DA01/spaceship-titanic-with-tfdf.ipynb",
+    "code_cells": 30,
+    "stored_error_outputs": 5,
+    "execution_this_review": "not executed",
+    "sha256": "467f707958257e8a7e17f3c3c4207ed4cb9084a2e339900dbb53c8b8ec10a0b0"
+  },
+  {
+    "path": "02_Data_Analysis/DA02/my_model.ipynb",
+    "code_cells": 44,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "f45e4e54387e0de7d36334d7332c66e19a679023896d1cea3f56aae2f356cf33"
+  },
+  {
+    "path": "03_Computer_Vision/CV01/Quest.ipynb",
+    "code_cells": 22,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "dd9024d87d0d589ec44ec7ec9c5243b63bb95def520afe419c95bd34b7679654"
+  },
+  {
+    "path": "03_Computer_Vision/CV02/Quest.ipynb",
+    "code_cells": 18,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "467ea202cd0f900048267f46bd82e32beca5cef79fcf1617d9e1ac94811bb8b8"
+  },
+  {
+    "path": "04_NLP/NLP01/Quest.ipynb",
+    "code_cells": 51,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "b81fc414be7d6ab0ac9f1036fab1518b6bc4d4025098abacef3261180c3eb499"
+  },
+  {
+    "path": "04_NLP/NLP02/Quest.ipynb",
+    "code_cells": 17,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "dc4167be35b6e6453847164f83169105fb428e1038ad8c6326df0a60abbae388"
+  },
+  {
+    "path": "04_NLP/NLP03/Quest.ipynb",
+    "code_cells": 25,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "559f991c512c115aaa39250919e609288835e4ad9cb251ce0be6146c1d716e73"
+  },
+  {
+    "path": "05_LLM/LLM01/Quest.ipynb",
+    "code_cells": 29,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "6195020d6cd4f2eca884509c2430e5a16df7fa912c0a2ff0f9afa0a890b30901"
+  },
+  {
+    "path": "05_LLM/LLM02/Quest.ipynb",
+    "code_cells": 22,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "a1c248c0c869595acbe6f2a5874925bfaa84e1edde8039378483d2bd8297e3fe"
+  },
+  {
+    "path": "05_LLM/LLM03/Quest.ipynb",
+    "code_cells": 27,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "58d83bba8da265ecc4f0d3e0c8e822b4fd8ed98ca778870fe584618f63985865"
+  },
+  {
+    "path": "06_Deployment/DP05/Quest.ipynb",
+    "code_cells": 32,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "bb781dcc1a3f6386477a5099670eec5622ac55d5dc0be548952bd55eec441880"
+  },
+  {
+    "path": "06_Deployment/DP08/Final_Code/Quest.ipynb",
+    "code_cells": 13,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "04dba8d499ae46059f796c7de4d99792c9d4c0367ce325d7406300296aa3a30b"
+  },
+  {
+    "path": "Main_Quest/MQ01/Quest0609.ipynb",
+    "code_cells": 19,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "7950e9b5cb524beb36fac58de9b70ad679864bc20b63a7f5e867865db5fa0ca3"
+  },
+  {
+    "path": "Main_Quest/MQ02/first_yolo_model.ipynb",
+    "code_cells": 6,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "8f66ff30e26e64a3038d9de088150e0d3c21ea5d25179c806eaa95d951cde842"
+  },
+  {
+    "path": "Main_Quest/MQ02/second_yolo_model.ipynb",
+    "code_cells": 4,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "35491fd6114fd4f01b4b069300f9d9f11dd9ed057f46484e35fd3c7c7f3057e9"
+  },
+  {
+    "path": "Main_Quest/MQ02/third_yolo_model.ipynb",
+    "code_cells": 1,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "9b9aba338ee2b9d2535aeb7e59e7ab6408cea43873ed32a1e023bd37b1a2c845"
+  },
+  {
+    "path": "Main_Quest/MQ02/video_zoom.ipynb",
+    "code_cells": 14,
+    "stored_error_outputs": 0,
+    "execution_this_review": "not executed",
+    "sha256": "db540f05862605effbb3da5734fe4dc4824d2a58da2eeaddf74a68f64fe03d9b"
+  },
+  {
+    "path": "Main_Quest/MQ03/Quest .ipynb",
+    "code_cells": 17,
+    "stored_error_outputs": 1,
+    "execution_this_review": "not executed",
+    "sha256": "959c6df61e1bb2d677219c54098014dd12a2263a1208933325760cbdeab0d267"
+  }
+]
